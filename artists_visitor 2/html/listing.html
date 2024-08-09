@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing</title>
+    <link rel="stylesheet" type="text/css" href="../css/listing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="data.js"></script>
+</head>
+<body>
+
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+          <div class="close">
+            <img  style="position: absolute;" src="../images/close.png" width="100%" height="100%" >
+        </div>
+        <h1 class="filterby">Filter by</h1>
+          <div class="menu">
+                <div style="width:100%;" class="filtItemCnt">
+                    <h5 class="filterTitleh">By Item Title</h5>
+                    <input id="filterTitleInput" type="text" placeholder="Label" >
+                </div>
+                <div style="width:100%;" class="filtItemCnt">
+                    <h5 class="filterTitleh" placeholder="Label" >By Artist</h5>
+                    <select id="filterArtistSelect">
+                        <option>Choose</option>
+                    </select>
+                </div>
+                <div style="width:100%;" class="filtItemCnt">
+                    <h5 class="filterTitleh">By Price</h5>
+                    <div class="minMax">
+                        <div class="min">
+                            <span class="filterTitleh">Min:</span>
+                            <input id="filterMinPriceInput" type="text" placeholder="Label" >
+                        </div>
+                        <div class="max">
+                            <span class="filterTitleh">Max:</span>
+                            <input id="filterMaxPriceInput" type="text" placeholder="Label" >
+                        </div>
+                    </div>
+                </div>
+                <div style="width:100%;" class="filtItemCnt">
+                    <h5 class="filterTitleh">By Type</h5>
+                    <select id="filterTypeSelect">
+                        <option>Choose</option>
+                    </select>
+                </div>
+          </div>
+        </div>
+      
+      </div>
+
+    <div class="navCnt">
+        <div style="position:relative;width:100%;height:69px;background-color:#FCEBD5;box-shadow: 0px 2px 2px 0px #00000040;" >
+            <img style="float: left;" src="../images/logo.png" height="104px" width="104px" >
+            <h2 style="float: left;" class="artName">Street ARTists</h2>
+            <img style="float: right;margin-right:14px;margin-top:25px;" src="../images/rightIcon.png" height="36px" width="36px" >
+        </div>
+    </div>
+
+    <div id="myBtn" class="filters">
+        <img id="closeSearch" src="../images/filter.png" width="65px" height="67px" >
+    </div>
+
+    <div id="itemsContainer">
+
+    <div class="itemList">
+        <img src='https://images.unsplash.com/photo-1617994422012-baad9c327e20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8cGFpbnRpbmcsIGFydCwgY2FudmFzLCBkaWdpdGFsYXJ0LCBhcnRpc3R8fHx8fHwxNjM1NDY5MTI0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=800' width="100%" height="165.18px" >
+        <span class="artNamee">Artist Name</span>
+        <div class="itPrice">$500</div>
+        <div class="itTitle">Title</div>
+        <div class="itDecs">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor</div>
+    </div>
+
+    <div class="itemList">
+        <img src='https://images.unsplash.com/photo-1617994422012-baad9c327e20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8cGFpbnRpbmcsIGFydCwgY2FudmFzLCBkaWdpdGFsYXJ0LCBhcnRpc3R8fHx8fHwxNjM1NDY5MTI0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=800' width="100%" height="165.18px" >
+        <span class="artName">Artist Name</span>
+        <div class="itPrice">$500</div>
+        <div class="itTitle">Title</div>
+        <div class="itDecs">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor</div>
+    </div>
+
+    <div class="itemList">
+        <img src='https://images.unsplash.com/photo-1617994422012-baad9c327e20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8cGFpbnRpbmcsIGFydCwgY2FudmFzLCBkaWdpdGFsYXJ0LCBhcnRpc3R8fHx8fHwxNjM1NDY5MTI0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=800' width="100%" height="165.18px" >
+        <span class="artName">Artist Name</span>
+        <div class="itPrice">$500</div>
+        <div class="itTitle">Title</div>
+        <div class="itDecs">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor</div>
+    </div>
+    </div>
+
+
+
+    <script>
+        function renderItems() {
+            const container = document.getElementById("itemsContainer");
+        
+            container.innerHTML = "";
+        
+            items.map((item) => {
+                if(item.isPublished){
+                const itemDiv = document.createElement("div");
+                itemDiv.classList.add("itemList");
+        
+                const img = document.createElement("img");
+                img.src = item.image;
+                img.style.width = "100%"; 
+                img.style.height = "165.18px";
+                itemDiv.appendChild(img);
+        
+                const artistName = document.createElement("span");
+                artistName.classList.add("artNamee");
+                artistName.textContent = item.artist;
+                itemDiv.appendChild(artistName);
+        
+                const price = document.createElement("div");
+                price.classList.add("itPrice");
+                price.textContent = item.price;
+                itemDiv.appendChild(price);
+        
+                const title = document.createElement("div");
+                title.classList.add("itTitle");
+                title.textContent = item.title;
+                itemDiv.appendChild(title);
+        
+                const description = document.createElement("div");
+                description.classList.add("itDecs");
+                description.textContent = item.description;
+                itemDiv.appendChild(description);
+        
+                container.appendChild(itemDiv);
+                }
+            });
+        }
+
+        renderItems();
+
+        function renderItemsData(data) {
+            const container = document.getElementById("itemsContainer");
+        
+            container.innerHTML = "";
+        
+            data.map((item) => {
+                if(item.isPublished){
+                const itemDiv = document.createElement("div");
+                itemDiv.classList.add("itemList");
+        
+                const img = document.createElement("img");
+                img.src = item.image;
+                img.style.width = "100%"; 
+                img.style.height = "165.18px";
+                itemDiv.appendChild(img);
+        
+                const artistName = document.createElement("span");
+                artistName.classList.add("artNamee");
+                artistName.textContent = item.artist;
+                itemDiv.appendChild(artistName);
+        
+                const price = document.createElement("div");
+                price.classList.add("itPrice");
+                price.textContent = item.price;
+                itemDiv.appendChild(price);
+        
+                const title = document.createElement("div");
+                title.classList.add("itTitle");
+                title.textContent = item.title;
+                itemDiv.appendChild(title);
+        
+                const description = document.createElement("div");
+                description.classList.add("itDecs");
+                description.textContent = item.description;
+                itemDiv.appendChild(description);
+        
+                container.appendChild(itemDiv);
+                }
+            });
+        }
+
+
+        var closeImage=document.getElementById("closeSearch");
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        
+        btn.onclick = function() {
+            if(closeImage.src.endsWith("filter.png")){
+          modal.style.display = "block";
+          closeImage.src="../images/tick.png";
+            }else{
+                modal.style.display = "none";
+                closeImage.src="../images/filter.png";
+                filterObjects();
+            }
+        }
+        
+        span.onclick = function() {
+          modal.style.display = "none";
+          closeImage.src="./filter.png";
+        }
+        
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        } 
+
+        function filterObjects() {
+            const filterTitle = document.getElementById('filterTitleInput').value.toLowerCase();
+            const filterArtist = document.getElementById('filterArtistSelect').value.toLowerCase();
+            const filterMinPrice = parseFloat(document.getElementById('filterMinPriceInput').value);
+            const filterMaxPrice = parseFloat(document.getElementById('filterMaxPriceInput').value);
+            const filterType = document.getElementById('filterTypeSelect').value.toLowerCase();
+        
+            const filteredObjects = items.filter(obj => {
+                if (filterTitle && !obj.title.toLowerCase().includes(filterTitle)) {
+                    return false;
+                }
+                if (filterArtist && obj.artist.toLowerCase() !== filterArtist) {
+                    return false;
+                }
+                if (!isNaN(filterMinPrice) && obj.price < filterMinPrice) {
+                    return false;
+                }
+                if (!isNaN(filterMaxPrice) && obj.price > filterMaxPrice) {
+                    return false;
+                }
+                if (filterType && obj.type.toLowerCase() !== filterType) {
+                    return false;
+                }
+                return true; 
+            });
+        
+            
+            renderItemsData(filteredObjects);
+        }
+
+        function getUniqueArtists() {
+            const uniqueArtists = [];
+            items.forEach(obj => {
+                if (!uniqueArtists.includes(obj.artist)) {
+                    uniqueArtists.push(obj.artist);
+                }
+            });
+            return uniqueArtists;
+        }
+        
+        function populateArtistSelect() {
+            const selectElement = document.getElementById('filterArtistSelect');
+            selectElement.innerHTML = '<option value="">Choose</option>'; 
+            const uniqueArtists = getUniqueArtists();
+            uniqueArtists.forEach(artist => {
+                const option = document.createElement('option');
+                option.text = artist;
+                option.value = artist; 
+                selectElement.appendChild(option);
+            });
+        }
+
+        populateArtistSelect();
+
+        
+        function populateTypeSelect() {
+            const selectElement = document.getElementById('filterTypeSelect');
+            selectElement.innerHTML = '<option value="">Choose</option>'; 
+            const uniqueTypes = itemTypes;
+            uniqueTypes.forEach(types => {
+                const option = document.createElement('option');
+                option.text = types;
+                option.value = types; 
+                selectElement.appendChild(option);
+            });
+        }
+
+        populateTypeSelect();
+
+    </script>
+    
+</body>
+</html>

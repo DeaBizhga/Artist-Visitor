@@ -1,0 +1,216 @@
+.artName{
+    font-family: Reenie Beanie;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: #A16A5E;
+    margin-top: 29px;
+    float: left;
+    margin-left: 20px;
+}
+
+.artNamee{
+    font-family: Reenie Beanie;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 7px;
+    float: left;
+    margin-left: 20px;
+}
+
+body{
+    margin: 0;
+    background: #EDD5BB;
+}
+
+.navCnt{
+    width: 100%;
+    height: 104px;
+    top: -9px;
+    gap: 0px;
+    opacity: 0px;
+    background-color:#EDD5BB;
+}
+.itemList:nth-child(odd){
+    background: #FCEBD5;
+    box-shadow: 0px 2px 2px 0px #00000040;
+    margin-top: 25px;
+    color: #A16A5E;
+}
+
+.itemList:nth-child(even){
+    background: #A16A5E;
+    box-shadow: 0px 2px 2px 0px #00000040;
+    margin-top: 25px;
+    color: #FCEBD5;
+}
+
+.itemList:nth-child(odd) .itPrice{
+    float: right;
+    margin-right: 20px;
+    padding: 3px 8px 3px 8px;
+    margin-top: 8.82px;
+    background: #A16A5E;
+    color: #FCEBD5;
+}
+
+.itemList:nth-child(even) .itPrice{
+    float: right;
+    margin-right: 20px;
+    padding: 3px 8px 3px 8px;
+    margin-top: 8.82px;
+    background: #FCEBD5;
+    color: #A16A5E;
+}
+
+/* .itPrice{ */
+    /* width: 43px;
+    height: 20px; */
+    /* -------------------- */
+    /* float: right;
+    margin-right: 20px;
+    padding: 3px 8px 3px 8px;
+    margin-top: 8.82px;
+    background: #A16A5E;
+    color: #FCEBD5; */
+/* } */
+
+
+.itTitle{
+    font-family: Roboto,cursive;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+    /* color: #A16A5E; */
+    margin-top: 40px;
+    margin-left: 17.32px;
+    margin-bottom: 0;
+}
+
+.itDecs{
+    margin-left: 18.35px;
+    margin-right: 18.35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 12.89px;
+    text-align: left;
+    /* color: #A16A5E; */
+}
+
+.filters{
+    width: 65px;
+    height: 67px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.modal{
+    display: none;
+    width:100%;
+    height: 100%;
+    position: fixed;
+    background-color: #A16A5E;
+    right: 0;
+    margin-top: 0;
+    box-shadow: 0px 4px 14px 0px #00000040;
+}
+
+.modal-content{
+    width:100%;
+    height: 100%;
+}
+
+.close{
+    position: absolute;
+    right: 31px;;
+    top: 85px;
+    width: 39px;
+    height: 39px;
+}
+
+.menu{
+    position: absolute;
+    width:100%;
+    height: 80%;
+    top: 98px;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+
+.menuContent{
+    margin-top: 10px;
+    width: 100%;
+    height: 36px;
+    background: #EDD5BB;
+    color: #A16A5E;
+}
+
+.filterTitleh{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21.09px;
+    text-align: left;
+    color: #EDD5BB;
+}
+
+.filterby{
+    left: 20px;
+    position: absolute;
+    margin-top: 91px;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35.16px;
+    text-align: left;
+    color: #FCEBD5;
+}
+
+.filtItemCnt{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FCEBD5;
+}
+
+input,select{
+    width: 100px;
+    background-color: #A16A5E;
+    color: #EDD5BB;
+    border: 1px solid #FCEBD5;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15.23px;
+    text-align: left;
+    padding: 6px 8px;
+}
+
+::placeholder{
+    color: #EDD5BB;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15.23px;
+    text-align: left;
+}
+
+.min{
+    float: left;
+}
+.max{
+    float: right;
+}
+
+.minMax{
+    height: 50px;
+    width: 100%;
+}
